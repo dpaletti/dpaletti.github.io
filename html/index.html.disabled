@@ -1,7 +1,6 @@
 ---
 layout: header.njk
 title: Home - Daniele Paletti 
-relative_path: 
 ---
     <div class="fill-viewport summary">
         <p>
