@@ -1,14 +1,14 @@
+const { EleventyHtmlBasePlugin } = require("@11ty/eleventy");
 module.exports = function(eleventyConfig) {
   
+// passthrough
     eleventyConfig.addPassthroughCopy("css");
-  
     eleventyConfig.addPassthroughCopy("assets");
-  };
-  
+    eleventyConfig.setServerPassthroughCopyBehavior("passthrough");
+
 // this is needed to automatically handle prefixing
 // gh-pages hosting needs prefixing.
-const { EleventyHtmlBasePlugin } = require("@11ty/eleventy");
+    eleventyConfig.addPlugin(EleventyHtmlBasePlugin);
+  };
+  
 
-module.exports = function(eleventyConfig) {
-  eleventyConfig.addPlugin(EleventyHtmlBasePlugin);
-};

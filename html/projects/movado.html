@@ -1,0 +1,61 @@
+---
+title: Movado - Daniele Paletti
+summary: "Movado: online learning RTL synthesis for automated design space exploration"
+publication: true
+---
+<div class="left-aligned" style="margin-bottom: 5vh">
+    <span class="page-title">
+        Movado: Online Learning RTL Synthesis 
+        for Automated Design Space Exploration        
+    </span>
+    <div class="under-title" style="margin-left: 10vw; ">
+        <a href="https://github.com/DPaletti/movado" class="link blue" style="font-size: calc(0.6vw + 0.8vh);">
+            github
+        </a>
+        <a href="https://ieeexplore.ieee.org/document/9835608" class="link red" style="font-size: calc(0.6vw + 0.8vh);">
+            paper
+        </a>
+
+        
+    </div>
+        <span class="page-title">
+            Why  
+        </span>
+        <p class="body-text" style="margin-left: 10vw; ">
+            Black-box functions modeling is crucial in many optimization problems.
+            However, the number of function evaluations is often limited
+            by time or cost, as in Design Space Exploration (DSE).
+            The literature mainly exploits genetic algorithms that,
+            while effective in solving DSE, 
+            require several calls of expensive fitness functions (FTFNs), 
+            such as synthesis and place&route. 
+            Therefore, approximating these black-box calls would
+            incredibly impact the final results.         
+        </p>
+        <span class="page-title">
+            What
+        </span>
+        <p class="body-text" style="margin-left: 10vw; ">
+            We propose several
+            improvements to existing DSE methodologies leveraging 
+            online learning models for an open-source approach 
+            generally applicable to FTFNs approximation.
+            Through Adaptive Hoeffding Trees as surrogate models
+            and Multi-Armed Bandits as controllers, 
+            our approach decides at each iteration 
+            whether to evaluate the real function or the
+            surrogate model by annotating the FTFN. 
+            The proposed approach achieves a top speedup of 2.67x 
+            over the non-approximated DSE while delivering solutions comparable with the Pareto-optimal ones.
+        </p>
+        <span class="page-title">
+            How
+        </span>
+        <p class="body-text" style="margin-left: 10vw; ">
+        Movado is implemented in pure python and exposes an annotation to the end-user.
+        Such annotation can be placed on any fitness function to map 
+        an exact optimization worflow to an approximated one.
+        MABs are implemented with the VowpalWabbit library.
+        Hoeffding trees are implemented with the River library.
+        </p>
+</div>
