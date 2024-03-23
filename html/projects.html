@@ -13,12 +13,6 @@ title: Projects - Daniele Paletti
     <a href={{ project.url }}>
         <div class="cell-container {% cycle "yellow", "red", "blue" %}">
             {{ project.data.summary }}
-            {% if project.data.publication == true %}
-              <div class="publication-container ">
-                publication
-              </div>
-            {% endif %}
- 
             <div class="arrow right"></div>
         </div>
     </a>
