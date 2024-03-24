@@ -1,5 +1,5 @@
 {
     "layout": "base.njk",
-    "tags": "project",
+    "tags": "blog_post",
     "relative_path": "../../.."
 }

@@ -2,3 +2,27 @@
 layout: base.njk
 title: Blog - Daniele Paletti
 ---
+
+<div class="left-aligned">
+    <p class="page-title">
+        Posts
+    </p>
+</div>
+<div class="scrollable-container">
+{% for blog_post in collections.blog_post%}
+    <a href={{ blog_post.url }}>
+        <div class="cell-container {% cycle "yellow", "red", "blue" %}">
+            <div class="cell-content-container">
+            <div>
+            {{ blog_post.data.summary }}
+            </div>
+            <div>
+                10
+            </div>
+            </div>
+            <div class="arrow right"></div>
+            <div class="publication_date">  </div>
+        </div>
+    </a>
+{% endfor %}
+</div>

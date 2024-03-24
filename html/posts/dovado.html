@@ -1,0 +1,51 @@
+---
+title: Dovado - Daniele Paletti
+summary: "Dovado: an open-source design space exploration Framework"
+date: 2024-03-01
+---
+<div class="left-aligned" style="margin-bottom: 5vh">
+    <span class="page-title">
+        Dovado: an Open-Source Design Space Exploration Framework
+    </span>
+    <div class="under-title" style="margin-left: 10vw; ">
+        <a href="https://github.com/DPaletti/dovado" class="link blue" style="font-size: calc(0.6vw + 0.8vh);">
+            github
+        </a>
+        <a href="https://ieeexplore.ieee.org/document/9460598" class="link red" style="font-size: calc(0.6vw + 0.8vh);">
+            paper
+        </a>
+
+        
+    </div>
+        <span class="page-title">
+            Why  
+        </span>
+        <p class="body-text" style="margin-left: 10vw; ">
+            Traditional hardware development exploits description languages 
+            such as VHDL and (System)Verilog to produce highly parametrizable
+                RTL designs. 
+                Different parameter values yield different utilization-frequency trade-offs,
+                and hand-tuning is not feasible with a non-trivial amount of parameters. 
+                Generally, the Computer-Aided Design (CAD) 
+                literature proposes approaches that mainly tackle automatic exploration without combining a design automation feature.    
+        </p>
+        <span class="page-title">
+            What
+        </span>
+        <p class="body-text" style="margin-left: 10vw; ">
+            Dovado is an open-source CAD tool for design space exploration (DSE)
+            tailored for FPGA-based designs. 
+            Starting from VHDL/(System)Verilog, 
+            Dovado exploits Vivado and supports the hardware developer
+            for an exact exploration of a given set of parameters or a DSE
+            where it returns the non-dominated set of configuration points.
+        </p>
+        <span class="page-title">
+            How
+        </span>
+        <p class="body-text" style="margin-left: 10vw; ">
+            Dovado is implemented in pure Python and employs ANTLR to parse VHDL/(System)Verilog projects.
+            On top of this, several TCL scripts have been developed to automate synthesis and implementation with Vivado.
+            Finally, VHDL/(System)Verilog boxes have been designed to avoid pin overflow when exploring non-top modules. 
+        </p>
+</div>

@@ -4,15 +4,15 @@ layout: header.njk
 
 {{ content | safe }}
 <footer>
-    <a href="." class="footer-navbar-logo">
+    <a href="{{ relative_path }}" class="footer-navbar-logo">
         <img src="{{ relative_path }}/assets/portfolio_logo.svg">
     </a>
     <ul class="navbar-links">
-        <li class="footer-navbar-item yellow"> <a class="navbar-link" href="{{ relative_path }}/html/publications.html">
-                publications</a>
+        <li class="footer-navbar-item yellow"> <a class="navbar-link" href="{{ relative_path }}/html/blog/index.html">
+                blog</a>
         </li>
-        <li class="footer-navbar-item blue"> <a class="navbar-link" href="{{ relative_path }}/html/projects.html"> projects</a></li>
-        <li class="footer-navbar-item red"> <a class="navbar-link" href="{{ relative_path }}/html/about.html"> about</a></li>
+        <li class="footer-navbar-item blue"> <a class="navbar-link" href="{{ relative_path }}/html/projects/index.html"> projects</a></li>
+        <li class="footer-navbar-item red"> <a class="navbar-link" href="{{ relative_path }}/html/about/index.html"> about</a></li>
         <li class="footer-navbar-item yellow"> <a class="navbar-link" href="https://github.com/DPaletti"> github</a></li>
         <li class="footer-navbar-item blue"> <a class="navbar-link" href="https://www.linkedin.com/in/daniele-paletti/"> linkedin</a></li>
     </ul>

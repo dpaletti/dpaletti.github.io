@@ -168,6 +168,11 @@
      -webkit-transform: rotate(-45deg);
  }
 
+ .cell-content-container {
+    display: flex;
+    flex-direction: column
+ }
+
 
  .cell-container {
      display: flex;
