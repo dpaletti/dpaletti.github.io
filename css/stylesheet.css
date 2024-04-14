@@ -3,6 +3,10 @@
  Author URL:  https://github.com/dpaletti/
 */
 
+@import "reset.css";
+@import "fonts.css";
+
+/*11ty copies normalize.css to css folder on site building*/
 
  a {
      text-decoration: none;
