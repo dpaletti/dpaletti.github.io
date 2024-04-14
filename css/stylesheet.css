@@ -6,6 +6,16 @@
 @import "reset.css";
 @import "fonts.css";
 
+
+:root {
+  --viewport-margin: 20vw;
+}
+
+.viewport-margin {
+    margin-left: var(--viewport-margin);
+    margin-right: var(--viewport-margin);
+}
+
 /*11ty copies normalize.css to css folder on site building*/
 
  a {
@@ -41,7 +51,7 @@
 
  .summary {
      font-size: calc(2.5vw + 3vh);
-     padding: calc(2vh + 6vw) 10vw 0 10vw;
+     padding: calc(2vh + 6vw) var(--viewport-margin) 0 var(--viewport-margin);
      font-family: "Fira Sans";
      font-weight: 350;
 
@@ -52,8 +62,6 @@
  }
 
  .fill-viewport {
-     width: 100vw;
-     height: 100vh;
      position: relative;
  }
 
@@ -61,14 +69,14 @@
      display: flex;
      justify-content: space-evenly;
      align-items: center;
-     margin: 3vh 10vw 0 10vw;
+     margin: 3vh var(--viewport-margin) 0 var(--viewport-margin);
  }
 
  footer {
      display: flex;
      justify-content: space-evenly;
      align-items: center;
-     margin: auto 10vw 5vh 10vw;
+     margin: auto var(--viewport-margin) 5vh var(--viewport-margin);
  }
 
  .navbar-links {
@@ -139,7 +147,7 @@
  }
 
  .page-title {
-     padding: calc(1vh + 3vw) 10vw 0 10vw;
+     padding: calc(1vh + 3vw) var(--viewport-margin) 0 var(--viewport-margin);
      font-size: calc(1.5vw + 2.5vh);
      font-family: "Source Serif Pro";
      font-weight: bold;
@@ -147,14 +155,14 @@
  }
 
  .small-text {
-     padding: 0vw 10vw 0 10vw;
+     padding: 0vw var(--viewport-margin) 0 var(--viewport-margin);
      font-size: calc(1vw + 1.5vh);
      font-weight: 350;
 
  }
 
  .scrollable-container {
-     margin: calc(3vh + 2vw) 10vw 10vh 10vw;
+     margin: calc(3vh + 2vw) var(--viewport-margin) 10vh var(--viewport-margin);
      font-family: "Fira Sans";
      font-weight: 350;
  }
@@ -172,11 +180,21 @@
      -webkit-transform: rotate(-45deg);
  }
 
+.title-date-container {
+    display: flex;
+    flex-direction: column
+}
+
+
  .cell-content-container {
     display: flex;
     flex-direction: column
  }
 
+  .entry-date {
+    font-size: calc(0.5vw + 1vh);
+    color: #767676
+  }
 
  .cell-container {
      display: flex;
@@ -185,7 +203,10 @@
      gap: 8vw;
      outline: calc(0.15vw + 0.15vh) solid #313638;
      margin-bottom: calc(0.15vw + 0.15vh);
-     padding: calc(1.5vw + 1.5vh);
+     padding-top: calc(1.5vw + 1.5vh);
+     padding-bottom: calc(1.5vw + 1.5vh);
+     padding-left: calc(1.5vw + 1.5vh);
+     padding-right: calc(1.5vw + 1.5vh);
      font-size: calc(1vw + 1.5vh);
  }
 
@@ -204,8 +225,8 @@
  .beside {
      display: flex;
      flex-direction: row;
-     margin: calc(3vh + 2vw) 5vw 10vh 10vw;
-     width: 80vw;
+     margin: calc(3vh + 2vw) calc(var(--viewport-margin) / 2) 10vh var(--viewport-margin);
+     width: calc(100vw - (var(--viewport-margin) * 2));
  }
 
  .hyperlink {
@@ -233,14 +254,14 @@
 
  .img-container {
      width: 60%;
-     margin-right: 5vw;
+     margin-right: calc(var(--viewport-margin) / 2);
      margin-top: 0.9vh;
      margin-bottom: 3vh;
 
  }
 
  .system-arch {
-     margin: 3.5vh 10vw 0 0;
+     margin: 3.5vh var(--viewport-margin) 0 0;
      width: 35vw;
  }
 
@@ -250,12 +271,12 @@
      }
 
      .system-arch {
-         margin: 3vh 10vw 0 0;
-         width: 80vw;
+         margin: 3vh var(--viewport-margin) 0 0;
+         width: calc(100vw - (var(--viewport-margin) * 2));
      }
 
      .about-text {
-         max-width: 80vw;
+         max-width: calc(100vw - (var(--viewport-margin) * 2));
      }
  }
 

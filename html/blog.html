@@ -9,19 +9,21 @@ title: Blog - Daniele Paletti
     </p>
 </div>
 <div class="scrollable-container">
-{% for blog_post in collections.blog_post%}
+{% assign blog_post_from_latest = collections.blog_post | reverse %}
+{% for blog_post in blog_post_from_latest%}
     <a href={{ blog_post.url }}>
         <div class="cell-container {% cycle "yellow", "red", "blue" %}">
             <div class="cell-content-container">
+            <div class="blog-cell-container">
             <div>
             {{ blog_post.data.summary }}
             </div>
-            <div>
-                10
+            <div class="entry-date">
+                Last updated {{ blog_post.date | YearMonthDay }}
+            </div>
             </div>
             </div>
             <div class="arrow right"></div>
-            <div class="publication_date">  </div>
         </div>
     </a>
 {% endfor %}

@@ -9,10 +9,20 @@ title: Projects - Daniele Paletti
     </p>
 </div>
 <div class="scrollable-container">
-{% for project in collections.project %}
+{% assign projects_from_latest = collections.projects | reverse %}
+{% for project in projects_from_latest%}
     <a href={{ project.url }}>
         <div class="cell-container {% cycle "yellow", "red", "blue" %}">
+            <div class="cell-content-container">
+            <div class="blog-cell-container">
+            <div>
             {{ project.data.summary }}
+            </div>
+            <div class="entry-date">
+                Ended {{ project.date | YearMonthDay }}
+            </div>
+            </div>
+            </div>
             <div class="arrow right"></div>
         </div>
     </a>

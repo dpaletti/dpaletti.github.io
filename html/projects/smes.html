@@ -1,12 +1,13 @@
 ---
 title: Sustainable Mobility - Daniele Paletti
 summary: "SMeS: Secure Mobility in eScooters"
+date: 2022-02-13
 ---
 <div class="left-aligned" style="margin-bottom: 5vh">
     <span class="page-title">
         SMeS: Secure Mobility in eScooters
     </span>
-    <div class="under-title" style="margin-left: 10vw; ">
+    <div class="under-title viewport-margin">
         <a href="https://github.com/DPaletti/mida_acv" class="link blue" style="font-size: calc(0.6vw + 0.8vh);">
             github
         </a>
@@ -15,7 +16,7 @@ summary: "SMeS: Secure Mobility in eScooters"
         <span class="page-title">
             Why  
         </span>
-        <p class="body-text" style="margin-left: 10vw; "> 
+        <p class="body-text viewport-margin"> 
             Many people share e-scooter rides which makes them a very dangerous vehicle.
             Therefore, detecting the weight and the number of people on a scooter
             before the ride begins is extremely important.
@@ -23,14 +24,14 @@ summary: "SMeS: Secure Mobility in eScooters"
         <span class="page-title">
             What
         </span>
-        <p class="body-text" style="margin-left: 10vw; ">
+        <p class="body-text viewport-margin">
             I analyzed the data coming from a set of sensors installed on the scooters.
             I built a time-series analysis pipeline and a 
             model to learn passenger weights and whether two people were sharing a ride.            </p>
         <span class="page-title">
             How <br>
         </span>
-        <p class="body-text" style="margin-left: 10vw; ">
+        <p class="body-text viewport-margin">
             The project is implemented in pure Python. SKlearn has been used for the model 
             and TSFresh for time-series windowing. 
             Sensor signal analysis has been performed with Numpy and Scipy. 
