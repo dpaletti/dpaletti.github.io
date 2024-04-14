@@ -5,6 +5,10 @@
 
 @import "reset.css";
 @import "fonts.css";
+@import "blog_post_style.css";
+
+
+/* Blog post settings */
 
 
 :root {
@@ -146,9 +150,19 @@
      flex-direction: column;
  }
 
+
+
  .page-title {
      padding: calc(1vh + 3vw) var(--viewport-margin) 0 var(--viewport-margin);
      font-size: calc(1.5vw + 2.5vh);
+     font-family: "Source Serif Pro";
+     font-weight: bold;
+     color: #313638;
+ }
+
+ .second-level-header {
+     padding: calc(1vh + 3vw) var(--viewport-margin) 0 var(--viewport-margin);
+     font-size: calc(1vw + 2vh);
      font-family: "Source Serif Pro";
      font-weight: bold;
      color: #313638;
