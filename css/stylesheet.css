@@ -279,7 +279,7 @@
      width: 35vw;
  }
 
- @media (max-width: 800px) {
+ @media (max-width: 1200px) {
      .beside {
          flex-direction: column;
      }

@@ -14,7 +14,8 @@
      color: #313638;
  }
 
- p {
+
+ p:not(.no.style){
     max-width: 80vw;
     font-family: "Fira Sans";
     font-weight: 350;
@@ -39,12 +40,39 @@ ol li {
 
 }
 
+
 ol li li {
     font-family: "Fira Sans";
     font-weight: 350;
-    font-size: calc(1vw + 1.5vh);
+    font-size: calc(0.9vw + 1.3vh);
     color: #313638;
     margin-left: 1vw;
-    margin-right: var(--viewport-margin);
+    margin-right: 0vw;
 
+}
+
+a {
+    text-decoration: underline;
+    text-decoration-color:#767676 ;
+}
+
+a:hover:nth-child(3n+1) {
+    text-decoration-color:#fac901ff ;
+}
+
+a:hover:nth-child(3n+2) {
+    text-decoration-color:#dd0100ff;
+}
+
+a:hover:nth-child(3n) {
+    text-decoration-color:#225095ff;
+}
+
+ol li li li{
+    font-family: "Fira Sans";
+    font-weight: 350;
+    font-size: calc(0.8vw + 1.1vh);
+    color: #313638;
+    margin-left: 1vw;
+    margin-right: 0vw
 }
