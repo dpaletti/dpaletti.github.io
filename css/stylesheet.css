@@ -3,16 +3,15 @@
  Author URL:  https://github.com/dpaletti/
 */
 
+
 @import "reset.css";
 @import "fonts.css";
 @import "blog_post_style.css";
 
 
-/* Blog post settings */
-
-
 :root {
   --viewport-margin: 20vw;
+  --toc-line-height: calc(2vw + 2vh);
 }
 
 .viewport-margin {
@@ -21,11 +20,6 @@
 }
 
 /*11ty copies normalize.css to css folder on site building*/
-
- a {
-     text-decoration: none;
-     color: #313638;
- }
 
  html {
      -webkit-tap-highlight-color: transparent;
@@ -317,4 +311,38 @@
      flex-direction: row;
      justify-content: flex-start;
      margin-top: calc(0.5vw + 1vh);
+ }
+
+ header a {
+    text-decoration: none;
+ }
+
+ header li {
+    display:block
+ }
+
+ .scrollable-container > a {
+    text-decoration: none;
+ }
+
+
+ .scrollable-container > li {
+    display: block;
+ }
+
+ .under-title > a {
+    text-decoration: none;
+ }
+
+
+ .under-title > a {
+    display: block;
+ }
+
+ footer a {
+    text-decoration: none;
+ }
+
+ footer li {
+    display: block;
  }
