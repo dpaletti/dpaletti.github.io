@@ -346,3 +346,7 @@
  footer li {
     display: block;
  }
+
+ footer {
+    padding-top: calc(2vw + 3vh);
+ }

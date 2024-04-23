@@ -14,6 +14,14 @@
      color: #313638;
  }
 
+ h3 {
+     padding: calc(1vh + 3vw) var(--viewport-margin) 0 var(--viewport-margin);
+     font-size: calc(1vw + 1.5vh);
+     font-family: "Source Serif Pro";
+     font-weight: bold;
+     color: #313638;
+ }
+
 
  p:not(.no.style){
     max-width: 80vw;
