@@ -1,0 +1,86 @@
+ h1 {
+     padding: calc(1vh + 3vw) var(--viewport-margin) 0 var(--viewport-margin);
+     font-size: calc(1.5vw + 2.5vh);
+     font-family: "Source Serif Pro";
+     font-weight: bold;
+     color: #313638;
+ }
+
+ h2 {
+     padding: calc(1vh + 3vw) var(--viewport-margin) 0 var(--viewport-margin);
+     font-size: calc(1.2vw + 2.1vh);
+     font-family: "Source Serif Pro";
+     font-weight: bold;
+     color: #313638;
+ }
+
+ h3 {
+     padding: calc(1vh + 3vw) var(--viewport-margin) 0 var(--viewport-margin);
+     font-size: calc(1vw + 1.5vh);
+     font-family: "Source Serif Pro";
+     font-weight: bold;
+     color: #313638;
+ }
+
+
+ p:not(.no.style){
+
+    max-width: 80vw;
+    font-family: "Fira Sans";
+    font-weight: 350;
+    font-size: calc(1vw + 1.5vh);
+    color: #313638;
+    margin-left: var(--viewport-margin);
+    margin-right: var(--viewport-margin);
+
+ }
+
+ a {
+    text-decoration: none;
+    color:  #313638;
+ }
+
+
+ol li::marker {
+    content: "➤ ";
+    font-size: calc(1vw + 1.5vh);
+}
+
+
+ol li{
+    font-family: "Fira Sans";
+    font-weight: 350;
+    font-size: calc(1vw + 1.5vh);
+    margin-left: var(--viewport-margin);
+    margin-right: var(--viewport-margin);
+    line-height: var(--toc-line-height);
+}
+
+ol li li::marker {
+    content: "➤ ";
+    font-size: calc(0.9vw + 1.2vh);
+}
+
+ol li li {
+    font-family: "Fira Sans";
+    font-weight: 350;
+    font-size: calc(0.9vw + 1.2vh);
+    margin-left: 1vw;
+    margin-right: 0vw;
+    line-height: var(--toc-line-height);
+}
+
+ol li li li::marker {
+    content: "➤ ";
+    font-size: calc(0.8vw + 1.1vh);
+}
+
+ol li li li{
+    font-family: "Fira Sans";
+    font-weight: 350;
+    font-size: calc(0.8vw + 1.1vh);
+    margin-left: 1vw;
+    margin-right: 0vw;
+    /*text-decoration: underline;*/
+    line-height: var(--toc-line-height);
+}
