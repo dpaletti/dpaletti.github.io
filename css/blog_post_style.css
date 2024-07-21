@@ -24,6 +24,7 @@
 
 
  p:not(.no.style){
+
     max-width: 80vw;
     font-family: "Fira Sans";
     font-weight: 350;
@@ -35,13 +36,13 @@
  }
 
  a {
-    text-decoration: underline;
+    text-decoration: none;
     color:  #313638;
  }
 
 
 ol li::marker {
-    content: "▪ ";
+    content: "➤ ";
     font-size: calc(1vw + 1.5vh);
 }
 
@@ -56,7 +57,7 @@ ol li{
 }
 
 ol li li::marker {
-    content: "▪ ";
+    content: "➤ ";
     font-size: calc(0.9vw + 1.2vh);
 }
 
@@ -70,7 +71,7 @@ ol li li {
 }
 
 ol li li li::marker {
-    content: "▪ ";
+    content: "➤ ";
     font-size: calc(0.8vw + 1.1vh);
 }
 
@@ -80,6 +81,6 @@ ol li li li{
     font-size: calc(0.8vw + 1.1vh);
     margin-left: 1vw;
     margin-right: 0vw;
-    text-decoration: underline;
+    /*text-decoration: underline;*/
     line-height: var(--toc-line-height);
 }
