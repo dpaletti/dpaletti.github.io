@@ -1,0 +1,111 @@
+
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<head>
+    <link rel="stylesheet" href="../../../css/stylesheet.css">
+    <link rel="icon" type="image/x-icon" href="../../../assets/favicon.ico">
+    <title>Daniele Paletti</title>
+</head>
+
+<body>
+    <header>
+        <a href="../../.." class="navbar-logo">
+            <img src="../../../assets/portfolio_logo.svg">
+        </a>
+        <ul class="navbar-links">
+            <li class="navbar-item yellow"> <a class="navbar-link" href="../../../html/blog/index.html"> blog</a></li>
+            <li class="navbar-item blue"> <a class="navbar-link" href="../../../html/projects/index.html"> projects</a></li>
+            <li class="navbar-item red"> <a class="navbar-link" href="../../../html/about/index.html"> about</a></li>    
+        </ul>
+    </header>
+    
+<h1>Table of Contents</h1>
+<ol>
+<li><a href="#orgb0268e6">Some normal title: with some normal details</a>
+<ol>
+<li><a href="#org4ca8087">Learning to fly with paper wings</a>
+<ol>
+<li><a href="#org1b85c33">This won't ever happen hopefully</a></li>
+</ol>
+</li>
+<li><a href="#org4417142">Very complex article, who writes this?</a>
+<ol>
+<li><a href="#orgb5d96a6">Aiuto ho finito le cassate</a></li>
+</ol>
+</li>
+</ol>
+</li>
+<li><a href="#orgb0268e6">Some normal title: with some normal details</a>
+<ol>
+<li><a href="#org4ca8087">Learning to fly with paper wings</a>
+<ol>
+<li><a href="#org1b85c33">This won't ever happen hopefully</a></li>
+</ol>
+</li>
+<li><a href="#org4417142">Very complex article, who writes this <!--  -->?</a>
+<ol>
+<li><a href="#orgb5d96a6">Aiuto ho finito le cassate</a></li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
+<p><a id="orgb0268e6"></a></p>
+<h1>Some Title</h1>
+<p>Some text
+Some text
+Some text
+Some text
+Some text
+Some text
+Some text
+Some text
+Some text
+Some text</p>
+<p><a id="org4ca8087"></a></p>
+<h2>Some 2nd level header Some 2nd level header Some 2nd level header Some 2nd level header with gsaaaag</h2>
+<p>Some text
+Some text
+Some text
+Some text
+Some text
+Some text
+Some text
+Some text
+Some text
+Some text</p>
+<p><a id="org1b85c33"></a></p>
+<h3>Some 3d level header</h3>
+<p><a id="org4417142"></a></p>
+<h2>Some 2 2nd level header</h2>
+<p><a id="orgb5d96a6"></a></p>
+<h3>Some 2 3rd level header</h3>
+<p>Aiuto sto scrivendo del testo attaccato al footer</p>
+
+<footer>
+    <a href="../../.." class="footer-navbar-logo">
+        <img src="../../../assets/portfolio_logo.svg">
+    </a>
+    <ul class="navbar-links">
+        <li class="footer-navbar-item yellow"> <a class="navbar-link" href="../../../html/blog/index.html">
+                blog</a>
+        </li>
+        <li class="footer-navbar-item blue"> <a class="navbar-link" href="../../../html/projects/index.html"> projects</a></li>
+        <li class="footer-navbar-item red"> <a class="navbar-link" href="../../../html/about/index.html"> about</a></li>
+        <li class="footer-navbar-item yellow"> <a class="navbar-link" href="https://github.com/DPaletti"> github</a></li>
+        <li class="footer-navbar-item blue"> <a class="navbar-link" href="https://www.linkedin.com/in/daniele-paletti/"> linkedin</a></li>
+    </ul>
+</footer>
+</body>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+    <script>
+$('a').each(function(index){
+                const colors = ["#dd0100ff", '#fac901ff', 'rgb(90, 143, 223)'];
+                const colorIndex = index % colors.length;
+                $(this).hover(function() {$(this).css("color", colors[colorIndex])}, function() {$(this).css("color", "#313638")})
+              });
+
+    </script>
+</html>
