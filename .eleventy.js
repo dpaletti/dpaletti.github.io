@@ -16,7 +16,6 @@ module.exports = function(eleventyConfig) {
         dateObj = new Date(dateString);
         return dateObj.toJSON().slice(0, 10);
     });
-
   };
   
 
