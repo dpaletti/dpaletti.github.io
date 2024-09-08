@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build-ghpages": "npx @11ty/eleventy --pathprefix=/daniele-paletti/"
+    "build-ghpages": "npx @11ty/eleventy --pathprefix=/dpaletti.github.io/"
   },
   "keywords": [],
   "author": "",
