@@ -3,9 +3,6 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "scripts": {
-    "build-ghpages": "npx @11ty/eleventy --pathprefix=dpaletti.github.io/"
-  },
   "keywords": [],
   "author": "",
   "license": "ISC",
