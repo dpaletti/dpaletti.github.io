@@ -1,7 +1,7 @@
  h1 {
      padding: calc(1vh + 3vw) var(--viewport-margin) 0 var(--viewport-margin);
      font-size: calc(1.5vw + 2.5vh);
-     font-family: "Source Serif Pro";
+     font-family: "Source Serif Pro", "serif";
      font-weight: bold;
      color: #313638;
  }
@@ -9,7 +9,7 @@
  h2 {
      padding: calc(1vh + 3vw) var(--viewport-margin) 0 var(--viewport-margin);
      font-size: calc(1.2vw + 2.1vh);
-     font-family: "Source Serif Pro";
+     font-family: "Source Serif Pro", "serif";
      font-weight: bold;
      color: #313638;
  }
@@ -17,7 +17,7 @@
  h3 {
      padding: calc(1vh + 3vw) var(--viewport-margin) 0 var(--viewport-margin);
      font-size: calc(1vw + 1.5vh);
-     font-family: "Source Serif Pro";
+     font-family: "Source Serif Pro", "serif";
      font-weight: bold;
      color: #313638;
  }
@@ -26,7 +26,7 @@
  p:not(.no.style){
 
     max-width: 80vw;
-    font-family: "Fira Sans";
+    font-family: "Fira Sans", "sans-serif";
     font-weight: 350;
     font-size: calc(1vw + 1.5vh);
     color: #313638;
@@ -48,7 +48,7 @@ ol li::marker {
 
 
 ol li{
-    font-family: "Fira Sans";
+    font-family: "Fira Sans", "sans-serif";
     font-weight: 350;
     font-size: calc(1vw + 1.5vh);
     margin-left: var(--viewport-margin);
@@ -62,7 +62,7 @@ ol li li::marker {
 }
 
 ol li li {
-    font-family: "Fira Sans";
+    font-family: "Fira Sans", "sans-serif";
     font-weight: 350;
     font-size: calc(0.9vw + 1.2vh);
     margin-left: 1vw;
@@ -76,7 +76,7 @@ ol li li li::marker {
 }
 
 ol li li li{
-    font-family: "Fira Sans";
+    font-family: "Fira Sans", "sans-serif";
     font-weight: 350;
     font-size: calc(0.8vw + 1.1vh);
     margin-left: 1vw;
