@@ -34,6 +34,11 @@
      justify-content: flex-start;
  }
 
+ /*Used to disable jquery coloring*/
+ .disable-jquery-coloring {
+
+ }
+
  td th table {
      padding: 0;
  }
