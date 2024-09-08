@@ -36,8 +36,13 @@
  }
 
  a {
-    text-decoration: none;
+    text-decoration: underline;
+
     color:  #313638;
+ }
+
+ol li a {
+    text-decoration: none
  }
 
 
