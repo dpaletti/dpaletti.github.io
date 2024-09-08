@@ -7,15 +7,21 @@ module.exports = function(eleventyConfig) {
     eleventyConfig.addPassthroughCopy("assets");
     eleventyConfig.setServerPassthroughCopyBehavior("passthrough");
 
-// this is needed to automatically handle prefixing
-// gh-pages hosting needs prefixing.
-    eleventyConfig.addPlugin(EleventyHtmlBasePlugin);
 
 // format date to YYYY-mm-dd
     eleventyConfig.addFilter("YearMonthDay", (dateString) => {
         dateObj = new Date(dateString);
         return dateObj.toJSON().slice(0, 10);
     });
+
+// Add prefix to make deployment work
+// gh-pages needs prefix for working
+    eleventyConfig.addPlugin(EleventyHtmlBasePlugin);
+
+	return {
+		pathPrefix: "/daniele-paletti/",
+	};
+
   };
   
 
