@@ -29,7 +29,7 @@
         Node Red Distributed Flows with Kafka
     </span>
     <div class="under-title viewport-margin">
-        <a href="https://github.com/ChiaraMarzano/node-red-distributed-flows" class="link blue" style="font-size: calc(0.6vw + 0.8vh);">
+        <a href="https://github.com/ChiaraMarzano/node-red-distributed-flows" class="disable-jquery-coloring link blue" style="font-size: calc(0.6vw + 0.8vh);">
             github
         </a>
         
@@ -75,10 +75,16 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
     <script>
 $('a').each(function(index){
+                if (!(location.hostname == new URL(this.href).hostname)) {
+                    $(this).attr("target", "_blank")
+                    $(this).attr("rel", "noreferrer nofollow noopener")
+                };
+
                 const colors = ["#dd0100ff", '#fac901ff', 'rgb(90, 143, 223)'];
                 const colorIndex = index % colors.length;
                 if (!$(this).hasClass("disable-jquery-coloring")) {
                     $(this).hover(function() {$(this).css("color", colors[colorIndex])}, function() {$(this).css("color", "#313638")})
+                    $(this).attr("target", "_blank")
                 }
               });
 

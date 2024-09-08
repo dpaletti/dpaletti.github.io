@@ -29,7 +29,7 @@
         Nacolla: declarative flow based programming in python
     </span>
     <div class="under-title viewport-margin">
-        <a href="https://github.com/DPaletti/nacolla" class="link blue" style="font-size: calc(0.6vw + 0.8vh);">
+        <a href="https://github.com/DPaletti/nacolla" class="disable-jquery-coloring link blue" style="font-size: calc(0.6vw + 0.8vh);">
             github
         </a>
         
@@ -43,7 +43,7 @@
             while forcing the system designer to think in terms of interfaces
             and abstractions.
             Initially this framework has been developed to extend 
-            <a class="hyperlink" href="../publications/dovado.html">
+            <a class="hyperlink" href="../dovado/index.html">
             Dovado</a>.            
             </p>
         <span class="second-level-header">
@@ -81,10 +81,16 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
     <script>
 $('a').each(function(index){
+                if (!(location.hostname == new URL(this.href).hostname)) {
+                    $(this).attr("target", "_blank")
+                    $(this).attr("rel", "noreferrer nofollow noopener")
+                };
+
                 const colors = ["#dd0100ff", '#fac901ff', 'rgb(90, 143, 223)'];
                 const colorIndex = index % colors.length;
                 if (!$(this).hasClass("disable-jquery-coloring")) {
                     $(this).hover(function() {$(this).css("color", colors[colorIndex])}, function() {$(this).css("color", "#313638")})
+                    $(this).attr("target", "_blank")
                 }
               });
 
