@@ -18,10 +18,6 @@ module.exports = function(eleventyConfig) {
 // gh-pages needs prefix for working
     eleventyConfig.addPlugin(EleventyHtmlBasePlugin);
 
-	return {
-		pathPrefix: "/daniele-paletti/",
-	};
-
   };
   
 
