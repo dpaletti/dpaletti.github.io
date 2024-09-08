@@ -11,7 +11,7 @@ title: Projects - Daniele Paletti
 <div class="scrollable-container">
 {% assign projects_from_latest = collections.projects | reverse %}
 {% for project in projects_from_latest%}
-    <a href={{ project.url }}>
+    <a href={{ project.url }} class="disable-jquery-coloring">
         <div class="cell-container {% cycle "yellow", "red", "blue" %}">
             <div class="cell-content-container">
             <div class="blog-cell-container">
