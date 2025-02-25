@@ -1,9 +1,9 @@
 ---
 title: Conway's law
-summary: "Structure and function: Conway's law and beyond"
-date: 2025-02-24
+summary: "Beyond Conway's law: bridging structure and function"
+date: 2025-02-25
 ---
-# Structure and function: Conway's law and beyond
+# Beyond Conway's law: bridging structure and function
 \
 Structure and function are tightly interwoven. Take a human arm, an extremely complex biological system that performs its functions through its structure; modifications to  its structure imply drastically different capabilities. Generally speaking, biological and artificial systems are always comprised of **subsystems** which we unveil from apparently unitary artifacts by slightly changing our viewpoint. The quest for **linking structure and function** becomes more intricate. We must abstract away the subsystems to find overarching patterns that help us examine broader system qualities.
 \
