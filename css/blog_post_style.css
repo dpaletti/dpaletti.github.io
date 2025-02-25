@@ -23,7 +23,7 @@
  }
 
 
- p:not(.no.style){
+ p{
 
     max-width: 80vw;
     font-family: "Fira Sans", "sans-serif";
