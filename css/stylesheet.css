@@ -355,3 +355,32 @@
  footer {
     padding-top: calc(2vw + 3vh);
  }
+
+blockquote {
+    margin: calc(2vh + 2vw) 0;
+    padding: 0 calc(2vh + 2vw);
+    position: relative;
+}
+
+blockquote p {
+    font-size: calc(0.9vw + 1.3vh);
+}
+
+blockquote h1 {
+    font-size: calc(1vw + 1.5vh);
+    font-weight: bold;
+    color: #313638;
+    font-variant: small-caps;
+    font-family: "Source Serif Pro", "serif";
+    padding: 0 var(--viewport-margin) calc(0.2vw + 0.6vh) var(--viewport-margin);
+
+}
+
+
+blockquote cite a{
+    display: block;
+    font-style: normal;
+    font-size: calc(0.8vw + 1vh);
+    padding-bottom: calc(0.7vh + 0.7vw);
+    text-align: left;
+}

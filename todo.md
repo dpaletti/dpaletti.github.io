@@ -1,0 +1,1 @@
+1. Finish article formatting, work on formatting the quote
