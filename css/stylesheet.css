@@ -129,6 +129,12 @@
      margin-right: auto;
  }
 
+ @media (max-width: 400px) {
+    .footer-navbar-logo {
+        display: none;
+    }
+}
+
  .yellow:hover {
      background-color: #fac901ff;
  }
